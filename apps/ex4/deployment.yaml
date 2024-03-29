@@ -12,8 +12,9 @@ spec:
   strategy: {}
   template:
     metadata:
+      name: ex4
       labels:
-        app: pippo
+        app: ex4
     spec:
       containers:
       #User repourl owner instead of iron87
