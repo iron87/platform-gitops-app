@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ex4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pippo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: pippo
+    spec:
+      containers:
+      #User repourl owner instead of iron87
+      - image: ghcr.io/iron87/ex4:latest
+        name: ex4
