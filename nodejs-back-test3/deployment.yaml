@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nodejs-back-test3
-nodejs-back-test3spec:
+spec:
   replicas: 1
   selector:
     matchLabels:
