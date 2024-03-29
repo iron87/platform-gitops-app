@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-nodejs-test
+  labels:
+    app: frontend-nodejs-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-nodejs-test
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: frontend-nodejs-test
+    spec:
+      containers:
+      #User repourl owner instead of iron87
+      - image: ghcr.io/iron87/frontend-nodejs-test:latest
+        name: frontend-nodejs-test
