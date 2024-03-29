@@ -19,3 +19,5 @@ spec:
       #User repourl owner instead of iron87
       - image: ghcr.io/iron87/frontend-nodejs-test:latest
         name: frontend-nodejs-test
+      imagePullSecrets:
+      - name:ghcr-secret
