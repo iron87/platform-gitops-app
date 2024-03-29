@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend3-test
+  labels:
+    app: frontend3-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend3-test
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: frontend3-test
+    spec:
+      containers:
+      #User repourl owner instead of iron87
+      - image: ghcr.io/iron87/frontend3-test:latest
+        name: frontend3-test
