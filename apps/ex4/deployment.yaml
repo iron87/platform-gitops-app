@@ -12,7 +12,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      name: ex4
       labels:
         app: ex4
     spec:
